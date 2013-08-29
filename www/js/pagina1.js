@@ -1,4 +1,4 @@
-var batStat = "";
+var batStat =new String("");
 function onLoad2() {
         document.addEventListener("deviceready", onDeviceReady, false);
     }
@@ -7,7 +7,7 @@ function onLoad2() {
     //
     function onDeviceReady() {
         window.addEventListener("batterystatus", onBatteryStatus, false);
-    },
+    }
 
     // Handle the batterystatus event
     //
