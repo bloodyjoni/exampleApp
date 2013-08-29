@@ -1,8 +1,8 @@
 var batStat= {
-function loadBat(){
+ loadBat: function(){
 return window.addEventListener("batterystatus", onBatteryStatus, false);
 }
-function onBatteryStatus(info) {
+onBatteryStatus: function (info) {
     // Handle the online event
 	
     console.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
