@@ -1,7 +1,7 @@
-var batStat = {
+var batStat = "";
 function onLoad2() {
         document.addEventListener("deviceready", onDeviceReady, false);
-    },
+    }
 
     // device APIs are available
     //
@@ -13,5 +13,6 @@ function onLoad2() {
     //
     function onBatteryStatus(info) {
         console.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
-    }
-};
+		batStat="Level: " + info.level + " isPlugged: " + info.isPlugged;
+		alert(batStat);
+	}
