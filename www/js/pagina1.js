@@ -11,13 +11,13 @@ onBatteryStatus: function(info){
 };
 function onLoad2() {
         document.addEventListener("deviceready", onDeviceReady, false);
-    },
+    }
 
     // device APIs are available
     //
     function onDeviceReady() {
         window.addEventListener("batterystatus", onBatteryStatus, false);
-    },
+    }
 
     // Handle the batterystatus event
     //
