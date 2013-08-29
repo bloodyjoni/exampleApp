@@ -1,4 +1,4 @@
-var batStat= {
+var batStat = {
  loadBat: function(){
 return window.addEventListener("batterystatus", onBatteryStatus, false);
 }
