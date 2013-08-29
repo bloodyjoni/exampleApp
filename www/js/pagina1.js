@@ -15,4 +15,5 @@ function onLoad2() {
         console.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
 		batStat="Level: " + info.level + " isPlugged: " + info.isPlugged;
 		alert(batStat);
+		window.document.write("<br/>"+"<h1>"+batStat.small()+"</h1>");
 	}
