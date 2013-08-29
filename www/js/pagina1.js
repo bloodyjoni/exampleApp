@@ -1,6 +1,6 @@
 var batStat= {
 function loadBat(){
-window.addEventListener("batterystatus", onBatteryStatus, false);
+return window.addEventListener("batterystatus", onBatteryStatus, false);
 }
 function onBatteryStatus(info) {
     // Handle the online event
