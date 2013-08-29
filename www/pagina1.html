@@ -14,12 +14,29 @@
 <div><a href="pagina2.html">Link 2</a></div>
 <div><a href="pagina3.html">Link 3</a></div>
 <div >
+<script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/pagina1.js">
+function onLoad2() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        window.addEventListener("batterystatus", onBatteryStatus, false);
+    }
+
+    // Handle the batterystatus event
+    //
+    function onBatteryStatus(info) {
+        console.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
+    }</script>
 <script>
-batStat.loadBat();
+		onLoad2();
+		batStat.loadBat();
 </script>
 </div>
-  <script type="text/javascript" src="js/pagina1.js"></script>
-  <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+  
 </body>
 </html>
